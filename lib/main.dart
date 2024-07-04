@@ -170,10 +170,10 @@ class _MyAppState extends State<MyApp> {
                       style: TextStyle(fontSize: 40),
                     ),
                     TextSpan(
-                      text: '\n${_batteryLevel > 90 ? 'Your battery is at risk' : 'Your battery is in good condition'}',
+                      text: '\n${_batteryLevel >= 90 ? 'Your battery is at risk' : 'Your battery is in good condition'}',
                       style: TextStyle(
                         fontSize: 20,
-                        color: _batteryLevel > 90 ? Colors.red : Color.fromARGB(255, 2, 98, 26),
+                        color: _batteryLevel >= 90 ? Colors.red : Color.fromARGB(255, 2, 98, 26),
                       ),
                     ),
                   ],
